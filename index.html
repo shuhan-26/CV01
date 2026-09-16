@@ -77,6 +77,9 @@
         .project-card:nth-child(3n) { transform: rotate(.8deg); }
         .project-card:hover { transform: translateY(-7px) rotate(0); box-shadow: 8px 11px 0 rgba(89, 102, 74, .22); }
         .project-image { border-radius: 0; filter: saturate(.72); }
+        .project-image.poster-image { position: relative; overflow: hidden; background: #8ec8dd; }
+        .project-image.poster-image img { display: block; width: 100%; height: 100%; object-fit: cover; filter: saturate(.9) contrast(1.02); }
+        .project-image.poster-image > span { z-index: 1; color: #173d54; text-shadow: 0 1px 2px rgba(255,255,255,.45); }
         .image-green { background: #798468; }
         .image-red { background: #bd806e; }
         .image-blue { background: #869a91; }
@@ -236,7 +239,7 @@
             <a class="space-node node-contact" href="#contact"><span class="node-number">04</span><b>找到我</b><small>GET IN TOUCH</small><i>↗</i></a>
             <div class="map-thread thread-one"></div><div class="map-thread thread-two"></div><div class="map-dot"></div>
           </div>
-          <div class="portfolio-bottom reveal"><p>电影学硕士 / 编剧 / 内容策划 / 翻译</p><span>SELECT AN AREA TO ENTER</span><p>2003 — 至今</p></div>
+          <div class="portfolio-bottom reveal"><p>电影学硕士 / 编剧 / 内容策划 / 翻译</p><span>SELECT AN AREA TO ENTER</span></div>
         </section>
 
         <section class="marquee-band" aria-label="专业方向"><div class="marquee-track">SCREENWRITING <span>✳</span> STORY DEVELOPMENT <span>✳</span> FILM & TV <span>✳</span> SCREENWRITING <span>✳</span> STORY DEVELOPMENT <span>✳</span></div></section>
@@ -255,10 +258,10 @@
         <section class="content-section projects-section" id="projects">
           <div class="section-heading project-heading reveal"><div><p class="eyebrow">02 / SELECTED WORK</p><h2>故事的不同形状，<br /><em>都值得被认真写下。</em></h2></div><div class="filter-bar" role="group" aria-label="筛选项目"><button class="filter-button is-active" data-filter="all">全部</button><button class="filter-button" data-filter="film">电影</button><button class="filter-button" data-filter="series">剧集</button></div></div>
           <div class="project-grid">
-            <article class="project-card project-large reveal" data-category="film"><div class="project-image image-green"><span>01 / FILM</span><div class="mock-window"><i></i><i></i><i></i><strong>零度<br />极限</strong></div></div><div class="project-info"><div><h3>《零度极限》</h3><p>院线电影｜2024 上映｜主演：韩庚、尹昉</p></div><span class="arrow-button">↗</span></div></article>
-            <article class="project-card reveal reveal-delay" data-category="film"><div class="project-image image-red"><span>02 / ANIMATION</span><div class="type-poster">超级<br /><b>赛车</b></div></div><div class="project-info"><div><h3>《猪猪侠：超级赛车》</h3><p>院线动画电影｜2023 上映</p></div><span class="arrow-button">↗</span></div></article>
-            <article class="project-card reveal" data-category="film"><div class="project-image image-blue"><span>03 / FILM</span><div class="phone-mock"><b>瞧，一桥</b><strong>入围<br />产业荣誉</strong><small>待映｜主演：惠英红、胡先煦</small></div></div><div class="project-info"><div><h3>《瞧，一桥》</h3><p>院线电影｜待映｜入围 2022 海浪电影周产业荣誉</p></div><span class="arrow-button">↗</span></div></article>
-            <article class="project-card reveal reveal-delay" data-category="film"><div class="project-image image-red"><span>04 / FILM</span><div class="type-poster">战狼<br /><b>II</b></div></div><div class="project-info"><div><h3>《战狼 II》</h3><p>院线电影｜2017 上映</p></div><span class="arrow-button">↗</span></div></article>
+            <article class="project-card project-large reveal" data-category="film"><div class="project-image poster-image"><img src="微信图片_20260916130739_27_2.jpg" alt="电影《零度极限》海报" /><span>01 / FILM</span></div><div class="project-info"><div><h3>《零度极限》</h3><p>院线电影｜2024 上映｜主演：韩庚、尹昉</p></div><span class="arrow-button">↗</span></div></article>
+            <article class="project-card reveal reveal-delay" data-category="film"><div class="project-image poster-image"><img src="微信图片_20260916130740_28_2.jpg" alt="电影《猪猪侠：超级赛车》海报" /><span>02 / ANIMATION</span></div><div class="project-info"><div><h3>《猪猪侠：超级赛车》</h3><p>院线动画电影｜2023 上映</p></div><span class="arrow-button">↗</span></div></article>
+            <article class="project-card reveal" data-category="film"><div class="project-image poster-image"><img src="微信图片_20260916130741_29_2.jpg" alt="电影《瞧，一桥》海报" /><span>03 / FILM</span></div><div class="project-info"><div><h3>《瞧，一桥》</h3><p>院线电影｜待映｜主演：惠英红、胡先煦｜入围 2022 海浪电影周产业荣誉</p></div><span class="arrow-button">↗</span></div></article>
+            <article class="project-card reveal reveal-delay" data-category="film"><div class="project-image poster-image"><img src="ed8578a5838c39366330ce79e75427cd.jpg" alt="电影《战狼 II》海报" /><span>04 / FILM</span></div><div class="project-info"><div><h3>《战狼 II》</h3><p>院线电影｜2017 上映</p></div><span class="arrow-button">↗</span></div></article>
             <article class="project-card reveal" data-category="series"><div class="project-image image-green"><span>05 / SERIES</span><div class="mock-window"><i></i><i></i><i></i><strong>公子<br />倾城</strong></div></div><div class="project-info"><div><h3>《公子倾城》</h3><p>剧集｜爱奇艺播出</p></div><span class="arrow-button">↗</span></div></article>
             <article class="project-card reveal reveal-delay" data-category="series"><div class="project-image image-blue"><span>06 / SERIES</span><div class="phone-mock"><b>双世宠妃</b><small>剧集｜腾讯视频播出</small></div></div><div class="project-info"><div><h3>《双世宠妃》</h3><p>剧集｜腾讯视频播出</p></div><span class="arrow-button">↗</span></div></article>
             <article class="project-card reveal" data-category="series"><div class="project-image image-red"><span>07 / SERIES</span><div class="type-poster">双世<br /><b>宠妃 II</b></div></div><div class="project-info"><div><h3>《双世宠妃》第二季</h3><p>剧集｜腾讯视频播出</p></div><span class="arrow-button">↗</span></div></article>
